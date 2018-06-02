@@ -23,7 +23,6 @@ class EmailParser
       @@all << email
     end
     @@all = @@all.uniq
-    @@all
   end
 
 
