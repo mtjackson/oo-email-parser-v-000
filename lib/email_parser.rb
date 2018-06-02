@@ -17,6 +17,8 @@ class EmailParser
     emails.each do |email|
       if email == ""
         emails[email].delete
+      else
+        @@all << email
       end
     end
     @@all
