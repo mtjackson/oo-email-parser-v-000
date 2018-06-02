@@ -20,7 +20,7 @@ class EmailParser
       end
     end
     emails.each do |email|
-      @@all << email
+      EMAILS << email
     end
     EMAILS = EMAILS.uniq
   end
