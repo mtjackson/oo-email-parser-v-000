@@ -19,6 +19,9 @@ class EmailParser
         emails.delete(email)
       end
     end
+    emails.each do |email|
+      @@all << email
+    end
     @@all
   end
 
