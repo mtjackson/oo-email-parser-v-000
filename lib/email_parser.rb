@@ -13,7 +13,8 @@ class EmailParser
 
   def parse(emails)
     
+    @all <<
   end
 
-  
+
 end
