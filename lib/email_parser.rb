@@ -20,11 +20,6 @@ class EmailParser
       end
     end
     emails.each do |email|
-      if @@all.include?(email)
-        emails.delete(email)
-      end
-    end
-    emails.each do |email|
       @@all << email
     end
     @@all
