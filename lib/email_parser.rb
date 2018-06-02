@@ -5,7 +5,7 @@
 class EmailParser
   attr_accessor :email_list
 
-  EMAILS = []
+  #EMAILS = []
 
   def initialize(emails)
     @email_list = emails
@@ -21,9 +21,9 @@ class EmailParser
       end
     end
     emails.each do |email|
-      EMAILS << email
+      all_emails << email
     end
-    EMAILS.uniq
+    all_emails = all_emails.uniq
   end
 
 
