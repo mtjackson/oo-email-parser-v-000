@@ -15,12 +15,14 @@ class EmailParser
     emails = @email_list.split(/[,\s]/)
 
     emails.each do |email|
-      if email == ""
-        emails.delete(email)
+  #    if email == ""
+  #      emails.delete(email)
+      if !EMAILS.include?(email)
+        EMAILS << email
       end
     end
-    emails.each do |email|
-      EMAILS << email
+#    emails.each do |email|
+#      EMAILS << email
     end
     EMAILS.uniq
   end
