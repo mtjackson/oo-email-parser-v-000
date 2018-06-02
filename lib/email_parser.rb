@@ -18,7 +18,6 @@ class EmailParser
       if email == ""
         emails.delete(email)
       end
-      @@all << email
     end
     @@all
   end
