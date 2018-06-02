@@ -11,7 +11,7 @@ class EmailParser
     @email_list = emails
   end
 
-  def parse
+  def parse(emails)
     emails = emails.split(/\,||\' '/)
     emails.each do |email|
       @@all << email
