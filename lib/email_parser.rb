@@ -15,7 +15,7 @@ class EmailParser
     emails = @email_list.split(/[,\s+]/)
 
     emails.each do |email|
-      if email == "" || @@all.includ?(email)
+      if email == "" || @@all.include?(email)
         emails.delete(email)
       end
     end
